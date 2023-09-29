@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Winx</title>
+    <!-- Projeto baseado no Projeto X-man do canal Dev em Dobro-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/logo.svg" alt="Logo Winx">
+    </header>
+
+    <!--listagem de personagens-->
+    <main class="selecao-de-personagens">
+      <section class="personagens"> 
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens"> 
+
+          <li class="personagem selecionado" id="bloom" data-name="Bloom" data-description="Ela é a fada da Chama do Dragão. Tem poderes de cura, pirocinese (criar e mover fogo com a mente), controlar a magia do fogo, criar esferas de fogo e calor.">
+            <img
+              src="./src/imagens/card-bloom.jpg"
+              alt="Personagem Bloom"
+            />
+          </li>
+          <li class="personagem" id="stella" data-name="Stella" data-description="A fada do Sol e da Lua, ela pode iluminar e criar luz ao seu redor, atacar esferas Solares poderosas e fazer explosão cósmica. Também é guardiã e dona do Anel/Cetro de Solaria.">
+            <img
+              src="./src/imagens/card-stella.jpg"
+              alt="Personagem Stella"
+            />
+          </li>
+
+          <li class="personagem" id="flora" data-name="Flora" data-description="A fada da natureza, ela tem o poder da Fitocinese, que inclui poder conversar com as plantas, se conectar com elas, controlar a terra e poder de cura.">
+            <img
+              src="./src/imagens/card-flora.jpg"
+              alt="Personagem Flora"
+            />
+          </li>
+
+          <li class="personagem" id="aisha" data-name="Aisha" data-description="É a fada das Ondas. Seus poderes incluem criar e controlar a água e muitas formas de umidadee, criar ondas e marés, transformar a água em oxigênio e nadar extremamente rápido.">
+            <img
+              src="./src/imagens/card-aisha.jpg"
+              alt="Personagem Aisha"
+            />
+          </li>
+
+          <li class="personagem" id="musa" data-name="Musa" data-description="Ela tem poderes baseados na música e no som, podendo criar grandes ondas sonoras e fazer bombas de ar com elas.">
+            <img
+              src="./src/imagens/card-musa.jpg"
+              alt="Personagem Musa"
+            />
+          </li>
+
+          <li class="personagem" id="tecna" data-name="Tecna" data-description="Ela é a fada da tecnologia. Ela pode criar eletricidade controlada, tempestades elétricas e poderes baseados na fonte da energia tecnológica e digital.">
+            <img
+              src="./src/imagens/card-tecna.jpg"
+              alt="Personagem Tecna"
+            />
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- delimitar seção do personagem selecionado da página-->
+      <section class="personagem-selecionado">
+        <img 
+            class="personagem-grande" 
+            src="./src/imagens/card-bloom.png" 
+            alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Bloom</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Ela é a fada da Chama do Dragão. Tem poderes de cura, pirocinese (criar e mover fogo com a mente), controlar a magia do fogo, criar esferas de fogo e calor.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
